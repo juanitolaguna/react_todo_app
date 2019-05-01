@@ -2,12 +2,18 @@ import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
 const Navbar = props => {
+  const styles = {
+    boxShadow: "0 8px 6px -6px #999"
+  };
   // setTimeout(() => {
   //   props.history.push("/contact");
   // }, 500);
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav
+        className="navbar navbar-expand-lg navbar-light bg-light"
+        style={styles}
+      >
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <NavLink to="/" className="nav-link">
